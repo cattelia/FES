@@ -1,0 +1,45 @@
+Inspect Element is crucial to debugging our code
+
+
+<h1></h1>               header 1 -> what I will use the most
+<h2></h2>               header 2 -> what I will use the most
+<h3></h3>               header 3
+<h4></h4>               header 4
+<h5></h5>               header 5
+<h6></h6>               header 6
+<head></head>           head tag - where we load <meta> tags in to SEO, <nav> and connected files
+<footer></footer>       footer tag - where we put footer details
+<body></body>           body tag - 
+<p></P>                 paragraph tag
+<b></b>                 bold element
+<i></i>                 italics element
+<a></a>                 anchor tag where you add links and other media
+    <a href="https://link">open link on same page</a>
+    <a href="https://link" target="_blank">open link on different page</a>
+<ul></ul>               unordered list, they get bullet points
+<ol></ol>               ordered list, they get number points
+<li></li>               indicates that this is a new element that should get a bullet/number points
+<nav></nav>             navigation element
+<main></main>           main part of the HTML file where the "meat" goes
+<section></section>     used to group html code together
+<img src="" alt="" />   insert a picture, self closing
+    src="" where is this picture being saved in files: can be local pictures or links
+        "./img/picture" if the img folder and the html file are on the same directory
+        "../img/picture" if the img folder and the html file are on different directory, 1 step away
+    alt="" what is shown if the picture cannot be loaded
+<form></form>
+    <input />
+<hr/>                    makes a horizontal line
+
+
+
+block element - start on a new line and take the full width available.
+    Eg: <div>, <h1> - <h6> or <p>
+inline element - do not start on a new line and take only the necessary width
+    Eg: <button>, <a href="">, <span style="">
+
+Extensions:
+prettier
+beautify css/sass
+live server
+mithril emmet
