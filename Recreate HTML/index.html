@@ -8,81 +8,125 @@
   </head>
   <body>
     <section>
-      <nav class="navbar">
-        <!-- NAVBAR -->
-        <img class="logo" src="./img/FES.svg" alt="" />
+      <!--
+      
+      NAV
+      
+      -->
+      <nav>
+        <img class="nav__logo" src="./img/FES.svg" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
-          <li>
-            <a href="#discord" target="_blank">Discord</a>
-          </li>
-          <li><a href="#contact">Courses</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!--
+      
+      HEADER
+      
+      -->
       <header>
-        <div>
-          <h1>Best Place to Learn Frontend</h1>
-          <p>
-            Go from absolute beginner to pro with a simplified, guided process.
-          </p>
-          <button>Start now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn frontend.</h1>
+            <p class="subheader">
+              Go from beginner to pro with a simplified process.
+            </p>
+            <button>Start now</button>
+          </div>
           <figure>
-            <img src="img/laptop.png" alt="" />
+            <img id="laptop" src="./img/laptop.png" alt="" />
           </figure>
         </div>
       </header>
     </section>
-
+    <!--
+      
+    MAIN
+      
+    -->
     <main>
+      <!--
+      
+      ABOUT
+      
+      -->
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          <p>
-            Ipsam itaque quia dolor molestiae maxime iste dignissimos laborum
-            natus quasi asperiores sunt sed aspernatur debitis praesentium cum,
-            blanditiis, delectus eligendi voluptates tenetur incidunt doloribus
-            rerum!
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, libero.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, libero.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./img/about.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-        <figure><img src="img/about.jpg" alt="" /></figure>
       </section>
+      <!--
 
+      Discord
+      
+      -->
       <section id="discord">
         <h2>Discord</h2>
-        <figure><img src="img/discord.png" alt="" /></figure>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>
-            Ipsam itaque quia dolor molestiae maxime iste dignissimos laborum
-            natus quasi asperiores sunt sed aspernatur debitis praesentium cum,
-            blanditiis, delectus eligendi voluptates tenetur incidunt doloribus
-            rerum!
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="./img/discord.png" alt="" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
+                suscipit.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
+                suscipit.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+      <!--
+      
+      CONTACT
+      
+      -->
       <section id="contact">
         <h2>Contact</h2>
-        <form action="">
-          <label>Email</label>
-          <input type="email" placeholder="john@doe.com" />
-          <label>Message</label>
-          <textarea type="text" placeholder="Here you go!"></textarea>
-          <button>Submit</button>
+        <form>
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <div class="form__button--wrapper">
+            <button id="button__contact">Submit</button>
+          </div>
         </form>
       </section>
-      <footer>
-        <img src="img/FES.svg" alt="" />
-        <div>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#discord">Discord</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="">Courses</a></li>
-          </ul>
-          <p>Copyright Frontend simplified</p>
-        </div>
-      </footer>
     </main>
+    <!--
+      
+    FOOTER
+      
+    -->
+    <footer>
+      <img class="footer__logo" src="./img/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="https://www.skool.com/fes-institute/classroom" target="_blank">Courses</a>
+      </div>
+      <p><i>Copyright Frontend Simplified &#169</i></p>
+    </footer>
   </body>
 </html>
