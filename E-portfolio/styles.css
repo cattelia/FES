@@ -1,0 +1,108 @@
+/* UNIVERSAL */
+
+@font-face {
+    font-family: 'Brolimo';
+    src: url(fonts/BROLIMO-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Regular.ttf) format('truetype');
+    font-weight: 500;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #2e2936;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* NAVIGATION BAR */
+
+#about-me {
+    padding: 15px 20px;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link--anchor {
+    margin: 0 12px;
+    text-decoration: none; /*Removes the Underline to anchor tags*/
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav__link--anchor-primary {
+    background-color: #e91e63;
+    padding: 8px 20px;
+    color:#fff;
+    border-radius: 15px;
+    transition: all 300ms ease;
+}
+
+.nav__link--anchor-primary:hover {
+    background-color: #aa1648;
+    color:#fff;
+}
+
+.personal__logo {
+    margin: 0 auto;
+    font-family: "Brolimo", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color:#e91e63;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.text--pink {
+    color:#e91e63;
+}
+
+.text--name {
+    font-family: "Brolimo", sans-serif;
+    font-size: 32px;
+}
