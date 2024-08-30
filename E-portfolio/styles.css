@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -40,6 +44,21 @@ li {
 
 .flex-1 {
     flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--pink {
+    color:#e91e63;
+}
+
+.text--name {
+    font-family: "Brolimo", sans-serif;
+    font-size: 32px;
 }
 
 /* NAVIGATION BAR */
@@ -83,11 +102,7 @@ nav {
 }
 
 .personal__logo {
-    margin: 0 auto;
-    font-family: "Brolimo", sans-serif;
-    font-size: 32px;
     font-weight: 700;
-    color:#e91e63;
 }
 
 /* ABOUT ME */
@@ -98,11 +113,59 @@ nav {
     flex-direction: column;
 }
 
-.text--pink {
-    color:#e91e63;
+.about-me__info {
+    display: flex;
+    flex-direction: column;
 }
 
-.text--name {
-    font-family: "Brolimo", sans-serif;
-    font-size: 32px;
+.about-me__info--container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    margin-bottom: 28px;
+}
+
+.about-me__picture {
+    width: 100%;
+    /*Improving photo composition*/
+    transform: scale(1.25);
+    padding-top: 4px;
+    padding-right: 8px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__link {
+    font-size: 28px;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+   flex: 1; 
+   margin: 32px 0;
+   display: flex;
+   align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
 }
