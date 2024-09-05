@@ -128,7 +128,7 @@ section:nth-child(even) {
 .coffee {
     display: inline-block;
     animation: animate-coffee 1.25s ease;
-    animation-iteration-count: 2;
+    animation-iteration-count: 3;
 }
 
 @keyframes animate-coffee {
@@ -154,7 +154,7 @@ section:nth-child(even) {
     filter: blur(.5rem);
     background-color: #fff;
     margin-top: -35px;
-    z-index: 0;
+    z-index: 0; /* Make steam go behind the coffee*/
     opacity: 0;
 }
   
