@@ -1,0 +1,6 @@
+Logo color: #AA852D
+Title color: #090B30
+
+
+slide in word for "post-graduates"
+https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition
