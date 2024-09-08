@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sara Eilenstine" />
+    <title>Incrementu</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <img class="logo" src="assets/logo.png" alt="" />
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link no-cursor">Contact</a></li>
+            <li>
+              <a href="#features" class="nav__link nav__link--primary no-cursor">Books</a>
+            </li>
+          </ul>
+        
+
+          <!-- Collapsed Menu Items for Responsiveness   -->
+          <button id="hamburger" class="button__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="menu" class="menu__backdrop">
+            <button class="button__menu button__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="./index.html" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link no-cursor" onclick="closeMenu()">Books</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1>
+              Incrementu's Cookie Policy
+            </h1>
+            <h2>
+              First things first, what are
+              <span class="text--gold">cookies?</span>
+            </h2>
+            <p>A <span class="text--gold">cookie</span> is a small text file that a website places on your computer or mobile device when you visit the site. It helps the site remember your actions and preferences (such as login, language, font size, and other display preferences) over a period of time, so you don't have to re-enter them whenever you come back to the site or browse from one page to another.</p>
+          </div>
+          <figure class="header__img--wrapper">
+            <img src="./assets/undraw_books.svg" alt="" />
+          </figure>
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="highlights">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              What does <span class="text--gold">Incrementu</span> do with these cookies?
+            </h2>
+            <h3><i>Right now, nothing. But if we did!</i></h3>
+            <div class="highlight__wrapper">
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="text--gold fas fa-bolt"></i>
+                </div>
+                <h3 class="highlight__subtitle">Functionality</h3>
+                <p class="highlight__para">
+                  Some cookies are essential for a proper functioning website.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="text--gold fas fa-book-open"></i>
+                </div>
+                <h3 class="highlight__subtitle">User Experience</h3>
+                <p class="highlight__para">
+                  It helps us understand and improve the user experience in our site.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="text--gold fas fa-tags"></i>
+                </div>
+                <h3 class="highlight__subtitle">Maintain Preferences</h3>
+                <p class="highlight__para">
+                    They help the site remember your actions and preferences such as login, font size, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+      <!-- EXPLORE -->
+      <section id="explore">
+        <div class="container">
+          <div class="row">
+            <div class="cookie-space"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__wrapper">
+            <a href="#"><figure class="footer__logo">
+              <img
+                src="./assets/logo_box_icon.png"
+                class="footer__box-logo"
+                alt=""
+              />
+            </figure></a>
+            <div class="footer__links">
+              <a href="./index.html" class="footer__link">Home</a>
+              <a href=" " class="footer__link no-cursor">About</a>
+              <a href="./cookies.html" class="footer__link">Cookies</a>
+              <a href="" class="footer__link no-cursor">Contact</a>
+            </div>
+            <p class="footer__copyright">Copyright &#169 2024 Incrementu </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
