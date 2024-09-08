@@ -96,7 +96,7 @@ nav {
 }
 
 .logo {
-    width: 250px;
+    max-width: 250px;
 }
 
 .nav__link {
@@ -237,6 +237,11 @@ header {
     margin-bottom: 24px;
 }
 
+.fa-bolt {
+    /* This is aggraget to .highligh__img padding */
+    padding: 0 6px;
+}
+
 .highlight__subtitle {
     font-style: normal;
     font-size: 20px;
@@ -265,6 +270,7 @@ header {
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -311,10 +317,90 @@ header {
     color:#090B3050
 }
 
+/* -------Features------ */
+/* ---------------------- */
 
+.scale--back {
+    transform: none;
+}
+
+.book__price {
+    font-size: 18px;
+}
+
+/* ----Responsiveness---- */
+/* ---------------------- */
 
 @media (min-width: 1250px) {
     .book__img--wrapper {
         min-height: 380px;
+    }
+
+    .section__title {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .button {
+        background-color: #090B30;
+        color:#fff;
+        border-radius: 5px;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 200ms ease;
+    }
+
+    .book__rating {
+        font-size: 16px;
+    }
+
+    .book__title {
+        font-size: 16px;
+    }
+
+    .book__price {
+        font-size: 16px;
+    }
+
+    .nav__link:not(.nav__link--primary) {
+        display: none;
+    }
+
+    .highlight__img {
+        border: 3px solid #AA852D70;
+        border-radius: 8px;
+        padding: 25px 35px;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 645px) {
+    /*.book__rating {
+        display: none;
+    }*/
+    .books {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book {
+        width: 45%; 
+    }
+
+    .book__price {
+        font-size: 16px;
     }
 }
