@@ -530,6 +530,13 @@ header {
         display: none;
     }
 
+    .nav__container{
+        padding: 0 32px;
+    }
+
+    .logo {
+        margin-right: 8px;
+    }
 
     .logo {
         max-width: 200px;
