@@ -1,0 +1,21 @@
+.relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__email {
+    padding: 10px 112px 8px 12px;
+    border-radius: 12px;
+}
+
+.container__button {
+    position: absolute;
+    border-radius: 12px;
+    padding: 6px 16px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(35%, -50%);
+}
