@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
   </head>
   <body>
 
@@ -12,7 +13,7 @@
     <section id="nav">
       <div class="container"> <!-- TOP/BOTTOM -->
         <div class="row">     <!-- LEFT/RIGHT -->
-          <nav class="navbar">
+          <nav>
             <div class="nav__logo--wrapper">
               <img class="box_logo "src="assets/box_logo.svg" alt="">
               <a class="logo" href="">Treact</a>
@@ -23,12 +24,67 @@
                 <li ><a class="nav__list" href="">Blog</a></li>
                 <li ><a class="nav__list" href="">Pricing</a></li>
                 <li ><a class="nav__list" href="">Contact Us</a></li>
-                <li ><a class="nav__list" href="">Login</a></li>
-                <li class="nav__list blue-primary"><a href="">Sign Up</a></li>
+                <li ><a class="nav__list exta-padding" href="">Login</a></li>
+                <li ><a class="blue-primary" href="">Sign Up</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
-    </section>    
+    </section>
+    
+    <section id="landing">
+      <div class="container">
+        <div class="row">
+          <nav>
+            <div class="nav__container nav__logo--wrapper">
+              <div class="left">
+                <img class="box_logo "src="assets/box_logo.svg" alt="">
+                <a class="logo" href="">Treact</a>
+              </div>
+              <div class="right">
+                <ul class="nav__lists">
+                  <li ><a class="nav__list" href="">About</a></li>
+                  <li ><a class="nav__list" href="">Blog</a></li>
+                  <li ><a class="nav__list" href="">Pricing</a></li>
+                  <li ><a class="nav__list" href="">Contact Us</a></li>
+                  <li ><a class="nav__list exta-padding" href="">Login</a></li>
+                  <li ><a class="blue-primary" href="">Sign Up</a></li>
+                </ul>
+              </div>
+    
+              <!-- Collapsed Menu Items for Responsiveness   -->
+              <button id="hamburger" class="button__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div id="menu" class="menu__backdrop">
+                <button class="button__menu button__menu--close" onclick="closeMenu()">
+                  <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list">
+                    <a href="" class="menu__link" onclick="closeMenu()">About</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="" class="menu__link" onclick="closeMenu()">Blog</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="" class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+                  </li>
+                  <li class="menu__list"></li>
+                    <a href="" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="" class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+
+  </body>   
 </html>
