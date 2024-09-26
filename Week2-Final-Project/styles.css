@@ -28,8 +28,8 @@ body {
     padding: 32px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #243E63;
+h1 {
+    font-size: 48px;
 }
 
 ul, li {
@@ -38,12 +38,31 @@ ul, li {
 
 a {
     text-decoration: transparent;
+    color: #243E63;
+}
+
+p {
+    font-size: 18px;
+    color: #243E63;
+    margin: 32px 0; 
+}
+
+img {
+    width: 100%;
 }
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
+}
+
+.container {
+    margin: 100px 0;
+}
+
+.font-blue {
+    color: #6415FF;
 }
 
 /*
@@ -57,7 +76,7 @@ nav {
     justify-content: space-between;
 }
 
-.nav__left {
+.nav__logo--wrapper {
     display: flex;
     align-items: center;
 }
@@ -68,8 +87,9 @@ nav {
 }
 
 .logo-name {
+    color: #243E63;
     font-weight: 900;
-    transition: all 300ms ease;
+    transition: all 400ms ease;
 
 } & .logo-name:hover {
     color: #6415FF;
@@ -118,8 +138,8 @@ nav {
     padding: 12px 32px;
     border-radius: 32px;
     background-color: #6415FF;
-    color: #fff;
-    transition: all 300ms ease;
+    color: #F7FAFC;
+    transition: all 400ms ease;
 
 } & .primary-button:hover {
     background-color: #4d0fc9;
@@ -127,3 +147,98 @@ nav {
 
 /* Need help figuring out how to exclude last child for effect rather than remove `menu__link` all together.*/
 
+/*
+
+Landing Page
+
+flexbox learning:
+https://jperasmus.me/posts/the-80-20-of-flexbox
+
+button to input responsiveness:
+https://www.geeksforgeeks.org/how-to-put-a-responsive-clear-button-inside-html-input-text-field/
+    https://stackoverflow.com/questions/38133269/text-input-border-color-not-changing-correctly-on-focus
+*/
+
+.landing-page__main {
+    display: flex;
+    align-items: center;
+}
+
+.landing__left {
+    flex-basis: 40%;
+}
+
+.landing__right {
+    flex-basis: 60%;
+}
+
+.landing__button--wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 448px;
+}
+
+.input__email {
+    width: 100%;
+    padding: 20px 192px 20px 32px;
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #243E63;
+    transition: all 400ms ease;
+
+} & input:focus {
+    border-color: #6415FF;
+    /* Required for Chrome*/
+    outline: none;
+
+} & .input__email:hover:not(:focus) {
+    border-color: #767676;
+
+}
+
+::placeholder {
+    /* Change color and style of placeholder text */
+    font-size: 16px;
+    font-weight: 500;
+    color: #CBD5E0;
+}
+
+.landing__button {
+    position: absolute;
+    border-radius: 32px;
+    border: none;
+    background-color: #6415FF;
+    color: #F7FAFC;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 34px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+} & .landing__button:hover {
+    background-color: #4d0fc9;
+
+}
+
+.partners {
+    margin: 80px 0 0 0;
+}
+
+.partners__headline {
+    margin: 0 0 16px 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #A0AEC0;
+}
+
+.partners__img {
+    max-width: 450px;
+    padding-right: 0 128px 0 0;
+    opacity: 0.5;
+}

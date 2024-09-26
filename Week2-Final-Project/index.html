@@ -12,13 +12,15 @@
     ></script>
   </head>
   <body>
-    
-    <section class="navigation-bar">
+    <!-- NAVIGATION BAR -->
+    <section id="navigation-bar">
       <div class="row">
         <nav>
           <div class="nav__left">
-            <img class="box-logo" src="assets/box_logo.svg" alt="">
-            <h2 class="logo-name">Treact</h2>
+            <a class="nav__logo--wrapper" href="#">
+              <img class="box-logo" src="assets/box_logo.svg" alt="">
+              <h2 class="logo-name">Treact</h2>
+            </a>
           </div>
           <div class="nav__right">
             <ul class="menu__lists">
@@ -31,6 +33,31 @@
             </ul>
           </div>
         </nav>
+      </div>
+    </section>
+
+    <!-- LANDING PAGE -->
+    <section id="landing-page">
+      <div class="container">
+        <div class="row">
+          <div class="landing-page__main">
+            <div class="landing__left">
+              <h1>Beautiful React Templates <span class="font-blue">for you</span></h1>
+              <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+              <div class="landing__button--wrapper">
+                <input type="email" class="input__email" placeholder="Your E-mail Address">
+                <button class="landing__button">Get Started</button>
+              </div>
+              <div class="partners">
+                <p class="partners__headline">Our trusted customers</p>
+                <img class="partners__img" src="assets/endorsed_cos.png" alt="">
+              </div>
+            </div>
+            <div class="landing__right">
+              <img src="assets/main_img.svg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
