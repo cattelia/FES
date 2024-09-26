@@ -65,6 +65,14 @@ img {
     color: #6415FF;
 }
 
+.font-grey-blue {
+    color: #243E63;
+}
+
+.no-margin {
+    margin: 0;
+}
+
 /*
 
 Navigation Bar
@@ -162,6 +170,7 @@ https://www.geeksforgeeks.org/how-to-put-a-responsive-clear-button-inside-html-i
 .landing-page__main {
     display: flex;
     align-items: center;
+    padding: 96px 0;
 }
 
 .landing__left {
@@ -241,4 +250,69 @@ https://www.geeksforgeeks.org/how-to-put-a-responsive-clear-button-inside-html-i
     max-width: 450px;
     padding-right: 0 128px 0 0;
     opacity: 0.5;
+}
+
+/*
+
+Features Page
+
+*/
+
+.features__content--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 96px 0;
+}
+
+.features__p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.features__h1 {
+    font-weight: 900;
+}
+
+.features__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7C8BA1;
+    letter-spacing: 0.05em;
+    max-width: 600px;
+}
+
+.features__services--wrapper {
+    display: flex;
+    padding: 32px 8px;
+    margin: 0 16px;
+}
+
+.text__container--wrapper {
+    text-align: left;
+    margin: 8px 0 0 16px;
+}
+
+.feature__title {
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #243E63;
+}
+
+.feature__description {
+        font-size: 16px;
+        font-weight: 500;
+        color: #7C8BA1;
+        letter-spacing: 0.05em;
+        margin: 16px 0 0 0;
+}
+
+.features__img--container {
+    border: 1px solid #7C8BA1;
+    border-radius: 50px;
+    padding: 35px;
 }
