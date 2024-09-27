@@ -354,3 +354,51 @@ Quality Work
     border: 1px solid #CBD5E050;
     border-radius: 5px;
 }
+
+/*
+
+Steps
+
+*/
+
+.steps__main--wrapper {
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+}
+
+.laptop-img {
+    width: 90%;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.steps-number {
+    font-size: 36px;
+    font-weight: 500;
+    color: #CBD5E0;
+}
+
+.steps {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+
+.step {
+    margin: 0 0 0 24px;
+    width: 50%;
+}
+
+.step__subtitle {
+    font-size: 20px;
+    color: #243E63;
+}
+
+.step__para {
+    font-size: 14px;
+    font-weight: 500;
+    color: #718096;
+    margin: 12px 0 0 0;
+}
