@@ -241,7 +241,6 @@ https://www.geeksforgeeks.org/how-to-put-a-responsive-clear-button-inside-html-i
     margin: 0 0 16px 0;
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #A0AEC0;
 }
@@ -289,8 +288,6 @@ Space under Div for image: https://albertwalicki.com/learn/solutions/extra-space
     max-width: 600px;
 }
 
-
-
 .features_text {
     text-align: left;
     margin: 8px 0 0 16px;
@@ -334,4 +331,26 @@ Space under Div for image: https://albertwalicki.com/learn/solutions/extra-space
 .icon {
     width: 24px;
     display: block;
+}
+
+/*
+
+Quality Work
+
+*/
+
+.quality__main--wrapper {
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+}
+
+.reduce-width {
+    width: 90%;
+    padding: 0 0 16px;
+}
+
+.quality-img {
+    border: 1px solid #CBD5E050;
+    border-radius: 5px;
 }
