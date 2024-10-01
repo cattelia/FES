@@ -269,18 +269,17 @@ Space under Div for image: https://albertwalicki.com/learn/solutions/extra-space
     padding: 96px 0;
 }
 
-.features__p {
+.features__p, .values__p {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 16px;
-    text-transform: uppercase;
 }
 
-.features__h1 {
+.features__h1, .values__h1 {
     font-weight: 900;
 }
 
-.features__subtitle {
+.features__subtitle, .values__subtitle {
     font-size: 18px;
     font-weight: 500;
     color: #7C8BA1;
@@ -418,3 +417,57 @@ Values Section
 .reduce-left {
     width: 80%;
 }
+
+.left__content--bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.values__attribute--title {
+    font-size: 20px;
+    color: #243E63;
+    font-weight: 700;
+}
+
+.values__attribute--para {
+    text-align: left;
+    margin: 16px 0 0;
+}
+
+.values__attributes--wrapper {
+    display: flex;
+}
+
+.values__attribute--img-wrapper {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+https://teamtreehouse.com/community/aligning-divs-with-percentages
+https://albertwalicki.com/learn/solutions/extra-space-below-image
+https://jperasmus.me/posts/the-80-20-of-flexbox
+https://medium.com/@umar.bwn/change-input-border-color-on-focus-enhance-user-experience-and-visual-feedback-8fe4f00e9a31
+https://www.youtube.com/watch?v=mIZDZIqdR7Y
+https://css-irl.info/animating-underlines/
+
+
+*/
