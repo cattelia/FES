@@ -141,7 +141,6 @@ nav {
 .primary-button {
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 1.25px;
     margin: 0;
     padding: 12px 32px;
     border-radius: 32px;
@@ -428,11 +427,14 @@ Values Section
     font-size: 20px;
     color: #243E63;
     font-weight: 700;
+    margin: 0 0 0 16px;
 }
 
 .values__attribute--para {
     text-align: left;
     margin: 16px 0 0;
+    color: #718096;
+    font-size: 16px;
 }
 
 .values__attributes--wrapper {
@@ -441,11 +443,37 @@ Values Section
 
 .values__attribute--img-wrapper {
     display: flex;
+    align-items: center;
 }
 
+.values__icon-background--money {
+    padding: 6px 12px;
+    border-radius: 50%;
+    background-color: rgb(154 230 180);
+}
 
+.values__icon--money {
+    font-size: 20px;
+    color: rgb(39, 103, 73);
+    display: block;
+}
 
+.values__icon-background--bag {
+    padding: 6px 12px;
+    border-radius: 50%;
+    background-color: rgb(254 178 178);
+}
 
+.values__icon--bag {
+    font-size: 20px;
+    color: rgb(155 44 44);
+    display: block;
+}
+
+.bottom-wrap {
+    display: flex;
+    margin-bottom: 48px;
+}
 
 
 
