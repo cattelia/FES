@@ -402,3 +402,19 @@ Steps
     color: #718096;
     margin: 12px 0 0 0;
 }
+
+/*
+
+Values Section
+
+*/
+
+.values__main--wrapper {
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.reduce-left {
+    width: 80%;
+}
