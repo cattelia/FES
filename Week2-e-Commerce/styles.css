@@ -467,10 +467,11 @@ header {
     .section__title {
         margin-top: 16px;
     }
+    
 }
 
 /*Small phones, tablets and large smartphones*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
     h1 {
         font-size: 36px;
@@ -507,6 +508,7 @@ header {
     .book {
         width: 50%; 
     }
+
 }
 
 @media (max-width: 600px) {
